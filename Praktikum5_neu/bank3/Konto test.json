@@ -1,0 +1,42 @@
+[
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "test",
+      "recipient": "test2",
+      "date": "1.1.24",
+      "amount": 20.0,
+      "description": "df"
+    }
+  },
+  {
+    "CLASSNAME": "IncomingTransfer",
+    "INSTANCE": {
+      "sender": "test2",
+      "recipient": "test",
+      "date": "1.1.24",
+      "amount": 80.0,
+      "description": "fefe"
+    }
+  },
+  {
+    "CLASSNAME": "Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.1,
+      "outgoingInterest": 0.15,
+      "date": "1.1.24",
+      "amount": 200.0,
+      "description": "dfdfs"
+    }
+  },
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "test",
+      "recipient": "test2",
+      "date": "1.1.24",
+      "amount": 200.0,
+      "description": "fdsddf"
+    }
+  }
+]

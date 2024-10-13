@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- Hauptfenster -->
+<!-- xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1"
+- Namespace für JavaFX Steuerelemente (AnchorPane / Listview etc) und
+- Namespace "fx:" (fx:controller etc)
+-->
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainView">
+    <children>
+        <!-- ListView zur Darstellung der accounts -->
+        <ListView fx:id="accountListView" layoutX="154.0" prefHeight="317.0" prefWidth="600.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <!-- Menü zum Auswählen / Löschen von Accounts -->
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <!-- onAction ruft entsprechende Methode aus dem Controller bei Tastendruck auf -->
+                        <MenuItem fx:id="choose" mnemonicParsing="false" onAction="#showAccount" text="Auswählen" />
+                        <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#deleteAccount" text="Löschen" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </ListView>
+        <!-- Button zum Hinzufügen von Accounts -->
+        <Button fx:id="accountAdd" layoutX="239.0" layoutY="346.0" mnemonicParsing="false" onAction="#addAccount" text="Account hinzufügen" AnchorPane.bottomAnchor="30.0" />
+    </children>
+</AnchorPane>
