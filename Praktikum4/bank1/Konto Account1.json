@@ -1,0 +1,52 @@
+[
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Account2",
+      "recipient": "Account1",
+      "date": "26.10.2023",
+      "amount": 2500.0,
+      "description": "Test OutgoingTransfer 1"
+    }
+  },
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Account2",
+      "recipient": "Account1",
+      "date": "26.10.2023",
+      "amount": 220.0,
+      "description": "Test OutgoingTransfer 2"
+    }
+  },
+  {
+    "CLASSNAME": "IncomingTransfer",
+    "INSTANCE": {
+      "sender": "Account1",
+      "recipient": "Account2",
+      "date": "26.10.2023",
+      "amount": 450.0,
+      "description": "Test IncomingTransfer 3"
+    }
+  },
+  {
+    "CLASSNAME": "Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.1,
+      "outgoingInterest": 0.5,
+      "date": "24.10.2023",
+      "amount": -50.0,
+      "description": "Test Payment 1"
+    }
+  },
+  {
+    "CLASSNAME": "Payment",
+    "INSTANCE": {
+      "incomingInterest": 0.1,
+      "outgoingInterest": 0.5,
+      "date": "24.10.2023",
+      "amount": 150.0,
+      "description": "Test Payment 2"
+    }
+  }
+]

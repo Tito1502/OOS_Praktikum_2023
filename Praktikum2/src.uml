@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Tito1502/Desktop/fh_aachen_dateien/OOS/Praktikum2/src</OriginalElement>
+  <nodes>
+    <node x="682.0" y="-14.0">Main</node>
+    <node x="286.0" y="490.0">bank.Payment</node>
+    <node x="199.25" y="-14.0">bank.CalculateBill</node>
+    <node x="145.25000000000003" y="99.0">bank.Transaction</node>
+    <node x="-72.0" y="478.0">bank.Transfer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bank.Transaction" target="bank.CalculateBill" relationship="REALIZATION">
+      <point x="-5.6843418860808015E-14" y="-164.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="bank.Payment" target="bank.Transaction" relationship="GENERALIZATION">
+      <point x="5.6843418860808015E-14" y="-164.5" />
+      <point x="461.5" y="453.0" />
+      <point x="279.25" y="453.0" />
+      <point x="0.0" y="164.5" />
+    </edge>
+    <edge source="bank.Transfer" target="bank.Transaction" relationship="GENERALIZATION">
+      <point x="0.0" y="-176.5" />
+      <point x="97.0" y="453.0" />
+      <point x="279.25" y="453.0" />
+      <point x="0.0" y="164.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0300578034682082" showDependencies="false" x="396.99999999999994" y="418.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
